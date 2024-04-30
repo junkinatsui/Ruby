@@ -45,3 +45,14 @@ books = {
 books.each do |key, value|
     puts "キー名は#{key}で、ペアとなっている値は#{value}です"
 end
+
+begin
+    number = 100 + nil
+    puts number
+rescue
+    puts $!
+    puts $@
+    puts "例外が発生したのでrescue分の処理が通っています。"
+end
+
+puts "処理が最後まで実行されました"
