@@ -39,3 +39,11 @@ name = "Ruby"
 name.extend(Teach)
 
 name.call()
+
+def foo(&b)
+    b.call
+end
+
+foo do
+    puts "Chunky bacon!!"
+end
